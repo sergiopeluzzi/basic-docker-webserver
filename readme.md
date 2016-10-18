@@ -31,14 +31,14 @@ Available on [localhost:8080](http://127.0.0.1:8080)
 
 
 + or you can do this:
-..* Create a **Dockerfile** file in your project folder
-..* Import **basewebserver** image and ADD project files.
+	* Create a **Dockerfile** file in your project folder
+	* Import **basewebserver** image and ADD project files.
 ```
 FROM yourname/basewebserver
 
 ADD . /var/www/html
 ```
-..* Now build a new image and run
+	* Now build a new image and run
 ```
 docker build -t yourname/projectname .
 
